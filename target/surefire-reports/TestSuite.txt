@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 1.011 s <<< FAILURE! - in TestSuite
+failTest2(testfail.TestFailRetry)  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.AssertionError: expected [2] but found [1]
+	at testfail.TestFailRetry.failTest2(TestFailRetry.java:29)
+

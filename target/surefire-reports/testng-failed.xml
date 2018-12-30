@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Default Suite]" allow-return-values="true">
+  <test thread-count="5" verbose="0" name="~/Documents/project/TestNG(failed)">
+    <classes>
+      <class name="testfail.TestFailRetry">
+        <methods>
+          <include name="failTest2" invocation-numbers="0 0 0 0"/>
+          <include name="afTest"/>
+          <include name="bfTest"/>
+        </methods>
+      </class> <!-- testfail.TestFailRetry -->
+    </classes>
+  </test> <!-- ~/Documents/project/TestNG(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

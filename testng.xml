@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="Default Suite" allow-return-values="true" group-by-instances="true">  &lt;!&ndash; 可定义测试套件名称 &ndash;&gt;
+    <test verbose="1" preserve-order="true" name="~/Documents/project/TestNG">
+        &lt;!&ndash;<groups>
+            <run>
+                <include name="annotation"/>
+                <exclude name="bfSuite"/>
+            </run>
+        </groups>
+        <classes >
+            <class name="TestAnnotation"/>
+        </classes >&ndash;&gt;
+        &lt;!&ndash;<parameter name="data" value="today"/>&ndash;&gt;
+        <classes>
+            &lt;!&ndash;<class name="TestParameter"/>&ndash;&gt;
+            &lt;!&ndash;<class name="factory.TestFactory"/>&ndash;&gt;
+            <class name="testfail.TestFailRetry"/>
+        </classes>
+    </test> &lt;!&ndash; TestNG &ndash;&gt;
+</suite> &lt;!&ndash; Default Suite &ndash;&gt;-->
+
+<!--<并发suite>-->
+<!--
+<suite name="parallel" parallel="methods">
+    <test name="test1">
+        <classes>
+            <class name="parallel.Parallel1">
+                <methods>
+                    <include name="test"/>
+                    <include name="test1"/>
+                </methods>
+            </class>
+            <class name="parallel.Parallel3"/>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="parallel.Parallel2"/>
+        </classes>
+    </test>
+    <test name="test">
+        <classes>
+            <class name="parallel.TestParallelFactory"/>
+        </classes>
+    </test>
+</suite>-->
+
+<!--<beanshell测试>-->
+<!--
+<suite name="BeanShell" group-by-instances="true">
+    <test verbose="2" preserve-order="true" name="Test">
+        <method-selectors>
+            <method-selector>
+                <script language="beanshell">
+                    <![CDATA[groups.containsKey("test1")]]>
+                </script>
+            </method-selector>
+        </method-selectors>
+        <classes>
+            <class name="beanshell.TestBeanShell"/>
+        </classes>
+    </test>
+</suite>-->
+
+<!--<注解转换器>-->
+<suite name="Transform">
+    <listeners>
+        <listener class-name="transform.Transform"/>
+    </listeners>
+
+    <test name="Test" verbose="2" preserve-order="true">
+        <classes>
+            <class name="transform.TestTransform"/>
+        </classes>
+    </test>
+</suite>
