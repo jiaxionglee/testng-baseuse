@@ -65,7 +65,7 @@
 </suite>-->
 
 <!--<注解转换器>-->
-<suite name="Transform">
+<!--<suite name="Transform">
     <listeners>
         <listener class-name="transform.Transform"/>
     </listeners>
@@ -73,6 +73,19 @@
     <test name="Test" verbose="2" preserve-order="true">
         <classes>
             <class name="transform.TestTransform"/>
+        </classes>
+    </test>
+</suite>-->
+
+<!--<方法拦截器>-->
+<suite name="Transform">
+    <listeners>
+        <listener class-name="transform.Transform2"/>
+    </listeners>
+
+    <test name="Test" verbose="2" preserve-order="true">
+        <classes>
+            <class name="transform.TransformFactory"/>
         </classes>
     </test>
 </suite>
