@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 1.334 s <<< FAILURE! - in TestSuite
-afMethod(injection.DependencyInjection)  Time elapsed: 0.258 s  <<< FAILURE!
-java.lang.IllegalArgumentException: wrong number of arguments
-
