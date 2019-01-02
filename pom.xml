@@ -14,6 +14,8 @@
         <reportng.version>1.1.4</reportng.version>
         <allure-testng.version>2.8.1</allure-testng.version>
         <aspectj.version>1.8.10</aspectj.version>
+        <guice.version>4.2.2</guice.version>
+        <guava-testlib.version>23.0</guava-testlib.version>
     </properties>
 
     <dependencies>
@@ -43,6 +45,21 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava-testlib -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava-testlib</artifactId>
+            <version>${guava-testlib.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>${guice.version}</version>
+        </dependency>
+
+
     </dependencies>
 
 

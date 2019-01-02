@@ -78,6 +78,7 @@
 </suite>-->
 
 <!--<方法拦截器>-->
+<!--
 <suite name="Transform">
     <listeners>
         <listener class-name="transform.Transform2"/>
@@ -86,6 +87,15 @@
     <test name="Test" verbose="2" preserve-order="true">
         <classes>
             <class name="transform.TransformFactory"/>
+        </classes>
+    </test>
+</suite>-->
+<!--<注入>-->
+
+<suite name="All Test Suite">
+    <test name="Test" verbose="2" preserve-order="true">
+        <classes>
+            <class name="injection.DependencyInjection"/>
         </classes>
     </test>
 </suite>
